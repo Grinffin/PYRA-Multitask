@@ -114,3 +114,4 @@ src = src + (src * weight_1) * weight_2 # this is considered a weighted average 
 * Acc@1 72.352 Acc@5 88.339 loss 1.361
 * Acc@1 71.268 Acc@5 88.325 loss 1.495
 * Acc@1 73.366 Acc@5 88.263 loss 1.427
+* Acc@1 73.561 Acc@5 88.426 loss 1.454
