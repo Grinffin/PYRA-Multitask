@@ -1,0 +1,116 @@
+weight_2 = 2*torch.sigmoid(tmp_src @ pyra_weight[1].transpose(0,1))
+src = src * weight_2
+* Acc@1 44.290 Acc@5 70.200 loss 2.883
+* Acc@1 74.445 Acc@5 80.789 loss 8.464
+* Acc@1 63.723 Acc@5 87.128 loss 8.461
+* Acc@1 91.608 Acc@5 97.040 loss 9.287
+* Acc@1 71.055 Acc@5 89.888 loss 8.714
+* Acc@1 38.179 Acc@5 59.223 loss 8.123
+* Acc@1 75.438 Acc@5 93.669 loss 8.175
+65.534
+
+weight_2 = 2*torch.sigmoid(tmp_src @ pyra_weight[1].transpose(0,1)) - 1
+src = src * weight_2
+* Acc@1 6.080 Acc@5 16.210 loss 6.019
+* Acc@1 16.664 Acc@5 21.495 loss 6.964
+* Acc@1 15.745 Acc@5 33.883 loss 6.806
+* Acc@1 8.554 Acc@5 13.319 loss 6.786
+* Acc@1 8.722 Acc@5 18.942 loss 6.768
+* Acc@1 1.977 Acc@5 4.069 loss 6.846
+break
+
+weight_2 = 2*torch.sigmoid(weight_src_pairs @ pyra_weight[1].transpose(0,1))
+src = src * weight_2 # this is considered a weighted average version of tome
+* Acc@1 49.840 Acc@5 77.020 loss 2.573
+* Acc@1 76.565 Acc@5 83.270 loss 8.436
+* Acc@1 61.011 Acc@5 84.521 loss 8.247
+* Acc@1 93.544 Acc@5 98.390 loss 9.464
+* Acc@1 72.418 Acc@5 90.679 loss 8.583
+* Acc@1 38.823 Acc@5 60.372 loss 8.182
+* Acc@1 70.817 Acc@5 88.326 loss 7.965
+66.15
+
+weight_1 = 2*torch.sigmoid(pyra_weight[0].transpose(0,1) @ weight_src_pairs)
+weight_2 = 2*torch.sigmoid(weight_src_pairs @ pyra_weight[1].transpose(0,1)) - 1
+src = src + (src * weight_1) * weight_2 # this is considered a weighted average version of tome
+* Acc@1 51.840 Acc@5 78.760 loss 2.465
+* Acc@1 77.962 Acc@5 84.700 loss 8.558
+* Acc@1 61.330 Acc@5 84.734 loss 8.273
+* Acc@1 93.934 Acc@5 98.423 loss 9.513
+* Acc@1 70.946 Acc@5 89.479 loss 8.524
+* Acc@1 38.124 Acc@5 59.117 loss 8.183
+* Acc@1 67.167 Acc@5 85.207 loss 7.834
+65.90
+
+all merge:
+weight_1 = 2*torch.sigmoid(pyra_weight[0].transpose(0,1) @ weight_src_pairs)
+weight_2 = 2*torch.sigmoid(weight_src_pairs @ pyra_weight[1].transpose(0,1)) - 1
+src = src + (src * weight_1) * weight_2 # this is considered a weighted average version of tome
+* Acc@1 50.270 Acc@5 78.720 loss 2.580
+* Acc@1 79.129 Acc@5 86.064 loss 8.298
+* Acc@1 63.457 Acc@5 88.191 loss 8.266
+* Acc@1 93.283 Acc@5 97.544 loss 9.108
+* Acc@1 77.732 Acc@5 95.203 loss 8.499
+* Acc@1 35.669 Acc@5 53.646 loss 7.747
+* Acc@1 62.200 Acc@5 85.276 loss 7.515
+65.96
+
+只用cifar100的pyra推理
+* Acc@1 51.520 Acc@5 80.640 loss 2.339
+* Acc@1 74.166 Acc@5 81.348 loss 8.271
+* Acc@1 62.553 Acc@5 86.649 loss 7.993
+* Acc@1 88.600 Acc@5 93.381 loss 8.856
+* Acc@1 75.933 Acc@5 93.486 loss 8.225
+* Acc@1 31.269 Acc@5 46.483 loss 7.705
+* Acc@1 54.544 Acc@5 76.064 loss 7.498
+
+* Acc@1 50.200 Acc@5 79.360 loss 2.396
+* Acc@1 72.950 Acc@5 79.901 loss 8.276
+* Acc@1 63.936 Acc@5 88.351 loss 8.619
+* Acc@1 91.332 Acc@5 96.276 loss 9.401
+* Acc@1 74.789 Acc@5 92.478 loss 8.665
+* Acc@1 38.860 Acc@5 60.248 loss 8.214
+* Acc@1 64.909 Acc@5 88.222 loss 7.873
+
+只用svhn的pyra推理
+* Acc@1 50.530 Acc@5 79.940 loss 2.375
+* Acc@1 74.807 Acc@5 81.726 loss 8.540
+* Acc@1 60.319 Acc@5 85.160 loss 8.672
+* Acc@1 90.405 Acc@5 95.999 loss 9.453
+* Acc@1 75.307 Acc@5 93.649 loss 8.699
+* Acc@1 38.837 Acc@5 60.317 loss 8.215
+* Acc@1 63.299 Acc@5 84.335 loss 7.905
+
+* Acc@1 48.670 Acc@5 77.190 loss 2.662
+* Acc@1 76.072 Acc@5 83.172 loss 7.986
+* Acc@1 61.436 Acc@5 87.021 loss 7.483
+* Acc@1 89.283 Acc@5 95.170 loss 8.551
+* Acc@1 75.170 Acc@5 94.522 loss 8.042
+* Acc@1 31.508 Acc@5 47.752 loss 7.457
+* Acc@1 68.012 Acc@5 91.726 loss 8.025
+
+
+* Acc@1 63.090 Acc@5 87.450 loss 1.531
+* Acc@1 87.428 Acc@5 92.539 loss 15.488
+* Acc@1 69.362 Acc@5 91.809 loss 15.190
+* Acc@1 98.504 Acc@5 99.463 loss 17.157
+* Acc@1 89.425 Acc@5 99.155 loss 17.504
+* Acc@1 49.862 Acc@5 71.071 loss 12.150
+* Acc@1 87.569 Acc@5 98.917 loss 17.806
+
+
+* Acc@1 62.860 Acc@5 87.450 loss 1.529
+* Acc@1 87.313 Acc@5 92.309 loss 15.362
+* Acc@1 69.521 Acc@5 91.330 loss 15.238
+* Acc@1 98.325 Acc@5 99.366 loss 17.144
+* Acc@1 89.207 Acc@5 99.237 loss 17.577
+* Acc@1 49.779 Acc@5 71.094 loss 12.177
+* Acc@1 87.024 Acc@5 98.978 loss 17.746
+* Acc@1 0.373 Acc@5 2.146 loss 6.693
+* Acc@1 63.499 Acc@5 85.151 loss 1.599
+* Acc@1 48.670 Acc@5 77.190 loss 2.662
+* Acc@1 33.580 Acc@5 60.680 loss 3.894
+* Acc@1 71.778 Acc@5 88.156 loss 1.305
+* Acc@1 72.352 Acc@5 88.339 loss 1.361
+* Acc@1 71.268 Acc@5 88.325 loss 1.495
+* Acc@1 73.366 Acc@5 88.263 loss 1.427

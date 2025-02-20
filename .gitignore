@@ -1,0 +1,10 @@
+
+*.pth
+*.pt
+*.npz
+*.tar
+
+__pycache__/
+*.pyc
+*.pyo
+*.log

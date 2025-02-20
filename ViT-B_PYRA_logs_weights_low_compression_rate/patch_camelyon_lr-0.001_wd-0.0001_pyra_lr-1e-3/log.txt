@@ -1,0 +1,11 @@
+{"train_lr": 1.0000000000000002e-06, "train_loss": 0.6863350387542478, "test_loss": 0.6849746993975714, "test_acc1": 55.828857421875, "test_acc5": 100.0, "epoch": 0, "n_parameters": 324284}
+{"train_lr": 0.0009001000000000007, "train_loss": 0.309639151538572, "test_loss": 0.524611229862785, "test_acc1": 77.7862548828125, "test_acc5": 100.0, "epoch": 10, "n_parameters": 324284}
+{"train_lr": 0.0009144048842659077, "train_loss": 0.10283666062018564, "test_loss": 1.084889934048988, "test_acc1": 73.895263671875, "test_acc5": 100.0, "epoch": 20, "n_parameters": 324284}
+{"train_lr": 0.0008083889915582237, "train_loss": 0.02741796348709613, "test_loss": 0.8323735946614761, "test_acc1": 83.1390380859375, "test_acc5": 100.0, "epoch": 30, "n_parameters": 324284}
+{"train_lr": 0.0006726752705214191, "train_loss": 0.012535200259017368, "test_loss": 0.9926624702638946, "test_acc1": 82.867431640625, "test_acc5": 100.0, "epoch": 40, "n_parameters": 324284}
+{"train_lr": 0.0005205483257436738, "train_loss": 0.010957989355383982, "test_loss": 0.9796525410492904, "test_acc1": 82.7362060546875, "test_acc5": 100.0, "epoch": 50, "n_parameters": 324284}
+{"train_lr": 0.00036689940251058136, "train_loss": 0.00702494116229636, "test_loss": 0.9727731990278699, "test_acc1": 83.3709716796875, "test_acc5": 100.0, "epoch": 60, "n_parameters": 324284}
+{"train_lr": 0.00022676872796319536, "train_loss": 0.005599381178692584, "test_loss": 1.0965569191030227, "test_acc1": 83.0078125, "test_acc5": 100.0, "epoch": 70, "n_parameters": 324284}
+{"train_lr": 0.00011387326887403328, "train_loss": 0.0042015155498032275, "test_loss": 1.177877732887282, "test_acc1": 82.537841796875, "test_acc5": 100.0, "epoch": 80, "n_parameters": 324284}
+{"train_lr": 3.9264019367658385e-05, "train_loss": 0.009287507068591131, "test_loss": 1.1134565376996761, "test_acc1": 83.514404296875, "test_acc5": 100.0, "epoch": 90, "n_parameters": 324284}
+{"train_lr": 1.0976769428005575e-05, "train_loss": 0.0011229144731788115, "test_loss": 1.1102969447965734, "test_acc1": 83.69140625, "test_acc5": 100.0, "epoch": 99, "n_parameters": 324284}
