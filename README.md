@@ -16,13 +16,13 @@ By the end of this assignment, you will be able to:
 
 ##  Environment Setup
 We recommend using **Kaggle Notebook** (no installation needed):  
- [$\textcolor{blue}{GotoNotebook}$](https://www.kaggle.com/code)
+ [Go to Notebook](https://www.kaggle.com/code)
 
 Once you have signed up for Kaggle Notebooks, you can access the following links to learn about K-means clustering and practice coding:
 
- [$\textcolor{blue}{Basic Python}$](https://www.kaggle.com/code/yufei2002/basic-python). This notebook provides a quick introduction to writing Python code. If you are already comfortable with Python, you may skip this part. (You don't need to hand in this)
+ [Basic Python](https://www.kaggle.com/code/yufei2002/basic-python). This notebook provides a quick introduction to writing Python code. If you are already comfortable with Python, you may skip this part. (You don't need to hand in this notebook)
 
- [$\textcolor{blue}{Kmeans Clustering}$](https://www.kaggle.com/code/yufei2002/k-means). This notebook walks you through the core steps of the K-means clustering algorithm. Follow the instructions and complete the code in the **TODO** sections. Please submit the completed notebook as your assignment.
+ [Kmeans Clustering](https://www.kaggle.com/code/yufei2002/k-means). This notebook walks you through the core steps of the K-means clustering algorithm. Follow the instructions and complete the code in the **TODO** sections. Please submit the completed notebook as your assignment.
 
 ---
 
@@ -52,14 +52,14 @@ This appendix will guide you through the process of using Kaggle Notebooks for y
 
     If you cannot open the link, you may try search for "yufei2002" in page https://www.kaggle.com/search, you will be able to find those 2 notebooks mentioned above.
 
-    ![Search page](image-3.png){ align=right }
+    ![Search page](image-3.png)
 
 
 2. Make Your Own Copy
 
     In the top-right corner, click “Copy & edit notebook”.
 
-    ![Create your own copy](image.png){ align=right }
+    ![Create your own copy](image.png)
 
     This will create your own editable copy of the notebook under your Kaggle account.
 
@@ -72,7 +72,7 @@ This appendix will guide you through the process of using Kaggle Notebooks for y
 
     Fill in the code where you see # TODO.
 
-    ![Write your code and run the cell](image-1.png){ align=right }
+    ![Write your code and run the cell](image-1.png)
 
     Run the notebook cell by cell to make sure your code works correctly.
 
@@ -83,4 +83,4 @@ This appendix will guide you through the process of using Kaggle Notebooks for y
 
     This will download your notebook file to your computer (e.g., kmeans_assignment.ipynb).
 
-    ![Download notebook](image-2.png){ align=right }
+    ![Download notebook](image-2.png)
